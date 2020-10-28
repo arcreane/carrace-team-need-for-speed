@@ -16,10 +16,9 @@ public class Car {
     /**
      * 
      */
-    public void Speed;
+    public void Speed(){
 
-
-
+    }
 
     /**
      * 
