@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 
  */
-public class Car {
+public abstract class Car {
 
     /**
      * Default constructor
