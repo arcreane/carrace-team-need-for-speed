@@ -29,15 +29,11 @@ public abstract class Car {
     /**
      * 
      */
-    public void Happening() {
-        // TODO implement here
-    }
+    abstract public void Happening();
 
     /**
      * 
      */
-    public void Drive() {
-        // TODO implement here
-    }
+    abstract public void Drive();
 
 }

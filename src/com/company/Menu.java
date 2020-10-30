@@ -94,7 +94,7 @@ public class Menu {
             }
         }
 
-        System.out.println(ansi().reset().fg(ansiColor).a("You chose a color" + color));
+        System.out.println(ansi().reset().fg(ansiColor).a("You chose a color " + color));
 
         return ansiColor;
     }
@@ -104,7 +104,7 @@ public class Menu {
      */
     public void Leave() {
         // TODO implement here
-        System.out.println("Press E for quit the game");
+        System.out.println("Type 3 for quit the game");
         System.exit(200);
     }
 

@@ -44,8 +44,9 @@ public class Chrono {
     }
 
 
-    public void speed_timer() {
+    public float speed_timer() {
         timer.scheduleAtFixedRate(speed_timer, 1000, 1000);
+        return 0;
     }
 
 

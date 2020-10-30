@@ -13,6 +13,11 @@ public class Roue extends Mecanic {
     public Roue() {
     }
 
+    @Override
+    public void Fail() {
+        repairWheels();
+    }
+
     /**
      * 
      */
