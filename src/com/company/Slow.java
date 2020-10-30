@@ -20,16 +20,14 @@ public class Slow extends Car {
 
     }
 
-    public String shuffle(String s)
-    {
+    public String shuffle(String s) {
 
         String shuffledString = "";
 
-        while (s.length() != 0)
-        {
+        while (s.length() != 0) {
             int index = (int) Math.floor(Math.random() * s.length());
             char c = s.charAt(index);
-            s = s.substring(0,index)+s.substring(index+1);
+            s = s.substring(0, index) + s.substring(index + 1);
             shuffledString += c;
         }
 
@@ -43,7 +41,7 @@ public class Slow extends Car {
         String MotsVitesse = "VITESSE";
         MotsVitesse = shuffle(MotsVitesse);
 
-        System.out.println(ansi().fg(Ansi.Color.MAGENTA).a("Type " + MotsVitesse + " in less than 10 second to get a speed boost Hit enter to start typing"));
+        System.out.println("Type " + MotsVitesse + " in less than 10 second to get a speed boost Hit enter to start typing");
 
         Scanner Scann = new Scanner(System.in);
 
@@ -63,6 +61,7 @@ public class Slow extends Car {
     public void Drive() {
         System.out.println("Je conduit tres lenteeeeeeemmmmmneeennt");
     }
+
     /**
      *
      */
