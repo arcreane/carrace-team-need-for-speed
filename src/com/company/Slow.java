@@ -19,19 +19,42 @@ public class Slow extends Car {
 
     }
 
+    public String shuffle(String s)
+    {
+
+        String shuffledString = "";
+
+        while (s.length() != 0)
+        {
+            int index = (int) Math.floor(Math.random() * s.length());
+            char c = s.charAt(index);
+            s = s.substring(0,index)+s.substring(index+1);
+            shuffledString += c;
+        }
+
+        return shuffledString;
+
+    }
+
     @Override
     public void Happening() {
-        System.out.println(ansi().fg(Ansi.Color.MAGENTA).a("Type EESTIVIS in less than 10 second to get a speed boost Hit enter to start typing"));
+
+        String MotsVitesse = "VITESSE";
+        MotsVitesse = shuffle(MotsVitesse);
+
+        System.out.println(ansi().fg(Ansi.Color.MAGENTA).a("Type " + MotsVitesse + " in less than 10 second to get a speed boost Hit enter to start typing"));
 
         Scanner Scann = new Scanner(System.in);
 
         String Vitesse = Scann.nextLine();
 
-        if (Vitesse.equals("EESTIVIS")) {
+        if (Vitesse.equals(MotsVitesse)) {
             System.out.println("Bravo");
             // La course reprend
+            // Gagne un boost
         } else {
             System.out.println("Vous n'avez pas la bonne réponse");
+            // Pas de boost
         }
     }
 
