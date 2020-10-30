@@ -3,9 +3,6 @@ package com.company;
 import org.fusesource.jansi.Ansi;
 
 import java.util.*;
-
-import static org.fusesource.jansi.Ansi.ansi;
-
 /**
  *
  */
@@ -37,6 +34,7 @@ public class Slow extends Car {
 
     @Override
     public void Happening() {
+        // Si la voiture est lente alors afficher Slow.Happening() sur un random de 0 à 100 si inférieur à 25 (Récup de l'index choisi par l'utilisateur)
 
         String MotsVitesse = "VITESSE";
         MotsVitesse = shuffle(MotsVitesse);
@@ -60,13 +58,6 @@ public class Slow extends Car {
 
     public void Drive() {
         System.out.println("Je conduit tres lenteeeeeeemmmmmneeennt");
-    }
-
-    /**
-     *
-     */
-    public void boost() {
-        // TODO implement here
     }
 
     /**

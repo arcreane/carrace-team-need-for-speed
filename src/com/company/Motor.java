@@ -1,7 +1,5 @@
 package com.company;
 
-import com.company.Mecanic;
-
 import java.util.*;
 
 /**
@@ -15,11 +13,9 @@ public class Motor extends Mecanic {
     public Motor() {
     }
 
-    /**
-     * 
-     */
-    public void Operation1() {
-        // TODO implement here
+    @Override
+    public void Fail() {
+        repairMotor();
     }
 
     /**

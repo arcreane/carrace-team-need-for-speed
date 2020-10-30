@@ -7,8 +7,6 @@ import static org.fusesource.jansi.Ansi.ansi;
 public class Main {
 
     public static void main(String[] args) {
-        /*Chrono chrono = new Chrono();
-        chrono.speed_timer();*/
 
         Menu menu = new Menu();
         int choice = menu.carChoice();
@@ -26,4 +24,5 @@ public class Main {
         //Lancement de la course
         circuit.areaCar();
     }
+
 }

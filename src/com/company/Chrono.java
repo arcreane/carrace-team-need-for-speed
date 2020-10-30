@@ -23,7 +23,10 @@ public class Chrono {
     TimerTask speed_timer = new TimerTask() {
         @Override
         public void run() {
+            char escCode = 0x1B;
+            int row = 10; int column = 10;
             int more = speed += 2;
+            System.out.print(String.format("%c[%d;%df",escCode,row,column));
             System.out.print('\r');
             System.out.print("Vroom, time elapsed : " + seconds++ + " secs");
             System.out.print("      ");
@@ -44,8 +47,9 @@ public class Chrono {
     }
 
 
-    public void speed_timer() {
+    public float speed_timer() {
         timer.scheduleAtFixedRate(speed_timer, 1000, 1000);
+        return 0;
     }
 
 

@@ -3,22 +3,21 @@ package com.company;
 import java.util.*;
 
 /**
- * 
+ *
  */
-public class Mecanic {
+public abstract class Mecanic {
 
     /**
      * Default constructor
      */
     public Mecanic() {
+
     }
 
 
     /**
-     * 
+     *
      */
-    public void Fail() {
-        // TODO implement here
-    }
+    abstract public void Fail();
 
 }
