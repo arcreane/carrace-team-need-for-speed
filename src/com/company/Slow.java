@@ -63,13 +63,6 @@ public class Slow extends Car {
     /**
      *
      */
-    public void boost() {
-        // TODO implement here
-    }
-
-    /**
-     *
-     */
     public void Timer() {
         // TODO implement here
     }
