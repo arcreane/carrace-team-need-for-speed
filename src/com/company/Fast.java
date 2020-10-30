@@ -2,7 +2,7 @@ package com.company;
 
 import org.fusesource.jansi.Ansi;
 
-public class Fast  extends Car{
+public class Fast extends Car {
 
     Mecanic[] mecanics;
 
@@ -18,9 +18,10 @@ public class Fast  extends Car{
     }
 
     public void Happening() {
-        // Random 0 ou 1 sur le tableau Mécanic
-        int i = 0;
-        mecanics[i].Fail();
+        int max = mecanics.length;
+        int nombreRandom = (int) (Math.random() * (max));
+        System.out.println(nombreRandom);
+        mecanics[nombreRandom].Fail();
         System.out.println("Je suis la voiture rapide");
     }
 
