@@ -16,7 +16,7 @@ public class Menu {
     /**
      * Default constructor
      */
-    public Menu( ) {
+    public Menu() {
 
     }
 
@@ -41,17 +41,16 @@ public class Menu {
         // Récupère les données entrées dans le Scanner
         String CarChoice = Scanner.nextLine();
 
+        //while(CarChoice.equals("1") || CarChoice.equals("2")) {
         try {
             choice = Integer.parseInt(CarChoice);
         } catch (NumberFormatException e) {
             System.out.println("Your number is not valid");
             carChoice();
         }
+        //}
+        System.out.println("Vous avez choisi la voiture " + choice);
 
-        while(CarChoice.equals("1") || CarChoice.equals("2")) {
-            System.out.println("Vous avez choisi la voiture " + choice );
-            colorChoice();
-        }
 
         return choice;
 
@@ -60,7 +59,7 @@ public class Menu {
     /**
      *
      */
-    public Ansi.Color colorChoice( ) {
+    public Ansi.Color colorChoice() {
 
         System.out.println("Choose your Color for your Car, or i'll beat you down mother facka : ");
 
@@ -80,7 +79,7 @@ public class Menu {
         String color = Scann.nextLine();
         Ansi.Color ansiColor = null;
 
-        while ( ansiColor == null ) {
+        while (ansiColor == null) {
             try {
                 ansiColor = Ansi.Color.valueOf(color);
             } catch (IllegalArgumentException e) {
