@@ -1,23 +1,28 @@
 package com.company;
 
+import org.fusesource.jansi.Ansi;
+
 import java.util.*;
 
 /**
  * 
  */
-public abstract class Car {
+public class Car {
+    Ansi.Color m_CarColor;
+    float m_fSpeed;
 
     /**
      * Default constructor
      */
-    public Car() {
+    public Car(Ansi.Color p_Color) {
+        m_CarColor = p_Color;
     }
 
     /**
      * 
      */
-    public void Speed(){
-
+    public float getSpeed(){
+        return m_fSpeed;
     }
 
     /**

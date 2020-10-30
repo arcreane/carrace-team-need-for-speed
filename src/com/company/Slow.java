@@ -14,8 +14,9 @@ public class Slow extends Car {
     /**
      * Default constructor
      */
-    public Slow() {
-
+    public Slow(Ansi.Color p_Color) {
+        super(p_Color);
+        m_fSpeed = 13;
 
     }
 
@@ -55,9 +56,14 @@ public class Slow extends Car {
         } else {
             System.out.println("Vous n'avez pas la bonne réponse");
             // Pas de boost
+            // La course continue
         }
     }
 
+    @Override
+    public void Drive() {
+        System.out.println("Je conduit tres lenteeeeeeemmmmmneeennt");
+    }
     /**
      *
      */
