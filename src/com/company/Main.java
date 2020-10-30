@@ -2,11 +2,9 @@ package com.company;
 
 import org.fusesource.jansi.Ansi;
 
-import static org.fusesource.jansi.Ansi.ansi;
-
 public class Main {
 
-    public static void main(String[] args) {
+    public void Play() {
 
         Menu menu = new Menu();
         int choice = menu.carChoice();
@@ -24,4 +22,13 @@ public class Main {
         //Lancement de la course
         circuit.areaCar();
     }
+
+    public static void main(String[] args) {
+
+        Main main = new Main();
+        main.Play();
+
+    }
+
+
 }
