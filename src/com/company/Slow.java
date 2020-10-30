@@ -60,7 +60,6 @@ public class Slow extends Car {
         }
     }
 
-    @Override
     public void Drive() {
         System.out.println("Je conduit tres lenteeeeeeemmmmmneeennt");
     }
@@ -76,10 +75,5 @@ public class Slow extends Car {
      */
     public void Timer() {
         // TODO implement here
-    }
-
-    @Override
-    public void Drive() {
-        System.out.println("Je conduit tres lenteeeeeeemmmmmneeennt");
     }
 }

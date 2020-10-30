@@ -9,7 +9,7 @@ import static org.fusesource.jansi.Ansi.ansi;
 /**
  *
  */
-public class Menu extends Game {
+public class Menu {
 
     int choice;
 
@@ -53,21 +53,6 @@ public class Menu extends Game {
             colorChoice();
         }
 
-
-        // Si l'utilisateur à taper 1
-        /*if (CarChoice.equals("1")) {
-            // On le renvoie sur le choix de la couleur
-            colorChoice();
-            choice = 1;
-        } else if (CarChoice.equals("2")) {
-            // On le renvoie sur le choix de la couleur
-            colorChoice();
-            choice = 2;
-        } else {
-            // Sinon on le renvoie sur le renvoie sur le choix des voitures
-            System.out.println("Your number is not valid");
-            carChoice();
-        }*/
         return choice;
 
     }
@@ -106,34 +91,6 @@ public class Menu extends Game {
 
         System.out.println(ansi().reset().fg(ansiColor).a("You chose a color" + color));
 
-//        // Si dans color
-//        // Il entre rouge
-//        if (color.equals("RED")) {
-//            // Alors on le renvoie sur le circuit pour commencer sa partie
-//            System.out.println("You chose a color RED");
-//            circuit.areaCar();
-//        } else if (color.equals("YELLOW")) {
-//            System.out.println("You chose a color YELLOW");
-//            circuit.areaCar();
-//        } else if (color.equals("BLUE")) {
-//            System.out.println("You chose a color BLUE");
-//            circuit.areaCar();
-//        } else if (color.equals("GREEN")) {
-//            System.out.println("You chose a color GREEN");
-//            circuit.areaCar();
-//        } else if (color.equals("CYAN")) {
-//            System.out.println("You chose a color CYAN");
-//            circuit.areaCar();
-//        } else if (color.equals("MAGENTA")) {
-//            System.out.println("You chose a color MAGENTA");
-//            circuit.areaCar();
-//        } else {
-//            /*
-//             * Si il entre aucune valeur alors on lui indique que son choix est invalide et on le renvoie sur le panel de choix de couleur
-//             */
-//            System.out.println("You chose a color invalid");
-//            colorChoice();
-//        }
         return ansiColor;
     }
 
