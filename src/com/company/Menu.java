@@ -41,14 +41,20 @@ public class Menu {
         // Récupère les données entrées dans le Scanner
         String CarChoice = Scanner.nextLine();
 
-        //while(CarChoice.equals("1") || CarChoice.equals("2")) {
-        try {
-            choice = Integer.parseInt(CarChoice);
-        } catch (NumberFormatException e) {
-            System.out.println("Your number is not valid");
-            carChoice();
+        choice = 0;
+        while (!(choice == 1 || choice == 2)) {
+            try {
+                choice = Integer.parseInt(CarChoice);
+            } catch (NumberFormatException e) {
+                System.out.println("Your number is not valid, please try again");
+                CarChoice = Scanner.nextLine();
+            }
+            if (choice != 1 && choice != 2) {
+                System.out.println("Your number is not valid, please try again");
+                CarChoice = Scanner.nextLine();
+            }
         }
-        //}
+
         System.out.println("Vous avez choisi la voiture " + choice);
 
 
