@@ -20,11 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="711b50da-500a-4955-a258-f9d3251f2902" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Circuit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Fast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Slow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Circuit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Circuit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Fast.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Fast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Slow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/carrace-team-need-for-speed/com/company/Slow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Circuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Circuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Fast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Slow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Slow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
