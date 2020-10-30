@@ -27,15 +27,9 @@ public class Slow extends Car {
 
         String Vitesse = Scann.nextLine();
 
-        if (Vitesse.equals("Vitesse")) {
+        if (Vitesse.equals("EESTIVIS")) {
             System.out.println("Bravo");
             // La course reprend
-        } else if (Vitesse.equals("VITESSE")) {
-            System.out.println("Bravo");
-            // La course reprend
-        } else if (Vitesse.equals("vitesse")) {
-            System.out.println("Bravo");
-            // La course reprendre
         } else {
             System.out.println("Vous n'avez pas la bonne réponse");
         }
