@@ -10,7 +10,6 @@ public class Fast  extends Car{
     public Fast(Ansi.Color p_Color) {
         super(p_Color);
         m_fSpeed = 35;
-
     }
 
     public void Happening() {

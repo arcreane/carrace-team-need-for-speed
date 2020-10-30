@@ -16,7 +16,7 @@ public class Menu extends Game {
     /**
      * Default constructor
      */
-    public Menu() {
+    public Menu( ) {
 
     }
 
@@ -69,13 +69,13 @@ public class Menu extends Game {
             carChoice();
         }*/
         return choice;
+
     }
 
     /**
      *
      */
-    public Ansi.Color colorChoice() {
-        Circuit p_Circuit = new Circuit();
+    public Ansi.Color colorChoice( ) {
 
         System.out.println("Choose your Color for your Car, or i'll beat you down mother facka : ");
 
@@ -93,29 +93,48 @@ public class Menu extends Game {
         Scanner Scann = new Scanner(System.in);
         // On récupére la valeur entrée par l'utilisateur
         String color = Scann.nextLine();
+        Ansi.Color ansiColor = null;
 
-        Ansi.Color AnsiColor = null;
-
-        while (AnsiColor == null) {
-
+        while ( ansiColor == null ) {
             try {
-
-                AnsiColor = Ansi.Color.valueOf(color);
-
+                ansiColor = Ansi.Color.valueOf(color);
             } catch (IllegalArgumentException e) {
-                /*
-                 * Si il entre aucune valeur alors on lui indique que son choix est invalide et on le renvoie sur le panel de choix de couleur
-                 */
                 System.out.println("You chose a color invalid");
                 color = Scann.nextLine();
             }
         }
 
-        System.out.println(ansi().reset().fg(AnsiColor).a("You chose a color" + color));
-        p_Circuit.areaCar();
+        System.out.println(ansi().reset().fg(ansiColor).a("You chose a color" + color));
 
-        return AnsiColor;
-
+//        // Si dans color
+//        // Il entre rouge
+//        if (color.equals("RED")) {
+//            // Alors on le renvoie sur le circuit pour commencer sa partie
+//            System.out.println("You chose a color RED");
+//            circuit.areaCar();
+//        } else if (color.equals("YELLOW")) {
+//            System.out.println("You chose a color YELLOW");
+//            circuit.areaCar();
+//        } else if (color.equals("BLUE")) {
+//            System.out.println("You chose a color BLUE");
+//            circuit.areaCar();
+//        } else if (color.equals("GREEN")) {
+//            System.out.println("You chose a color GREEN");
+//            circuit.areaCar();
+//        } else if (color.equals("CYAN")) {
+//            System.out.println("You chose a color CYAN");
+//            circuit.areaCar();
+//        } else if (color.equals("MAGENTA")) {
+//            System.out.println("You chose a color MAGENTA");
+//            circuit.areaCar();
+//        } else {
+//            /*
+//             * Si il entre aucune valeur alors on lui indique que son choix est invalide et on le renvoie sur le panel de choix de couleur
+//             */
+//            System.out.println("You chose a color invalid");
+//            colorChoice();
+//        }
+        return ansiColor;
     }
 
     /**

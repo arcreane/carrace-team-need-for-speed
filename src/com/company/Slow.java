@@ -78,4 +78,8 @@ public class Slow extends Car {
         // TODO implement here
     }
 
+    @Override
+    public void Drive() {
+        System.out.println("Je conduit tres lenteeeeeeemmmmmneeennt");
+    }
 }
